@@ -78,40 +78,6 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-    <!-- <script src="resources/js/script.js"></script> -->
-    <script>
-      const cont = document.getElementById("main-content");
-      // cont.innerHTML = "<p>pleeeeeease speed<\p>";
-      fetch("/home.html")
-        .then((res) => res.text())
-        .then((data) => {
-          console.log(data);
-        });
-      async function goToPage(pageName) {
-        if (pageName === "home") {
-          fetch("home.html") // Replace with the actual filename
-            .then((response) => {
-              if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-              }
-              return response.text(); // Use .text() to get the HTML content as a string
-            })
-            .then((htmlContent) => {
-              cont.innerHTML = htmlContent;
-              // console.log(htmlContent);
-              // For example, inject it into an element on your page:
-              // document.getElementById('content-area').innerHTML = htmlContent;
-            })
-            .catch((error) => {
-              console.error("Error fetching HTML:", error);
-            });
-          // cont.innerHTML = "<p>pleeeeeease speed<\p>";
-          // cont.innerHTML = "<p>pleeeeeease speed<\p>";
-        } else if (pageName === "contact") {
-          cont.innerHTML = "<p>i need this<\p>";
-        }
-      }
-      goToPage("home");
-    </script>
+    <script src="resources/js/script.js"></script>
   </body>
 </html>
