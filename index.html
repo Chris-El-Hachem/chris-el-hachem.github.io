@@ -1,9 +1,117 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Portfolio</title>
-    </head>
-    <body>
-        <h1>work in progress</h1>
-    </body>
+<html lang="en">
+  <head>
+    <title>Portfolio - Chris El Hachem</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="resources/css/bootstrap.css" />
+  </head>
+
+  <body>
+    <!--Navigation bar-->
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Portfolio - Chris El Hachem</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarColor01"
+          aria-controls="navbarColor01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a onclick="goToPage('home')" class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Projects</a
+              >
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Project 1</a>
+                <a class="dropdown-item" href="#">Project 2</a>
+                <a class="dropdown-item" href="#">Project 3</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">All Projects</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a onclick="goToPage('contact')" class="nav-link" href="#"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--end of Navigation bar-->
+
+    <!--Main site text-->
+    <div class="container-fluid">
+      <div id="main-content"></div>
+    </div>
+    <!--end of Main site text-->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="resources/js/script.js"></script> -->
+    <script>
+      const cont = document.getElementById("main-content");
+      // cont.innerHTML = "<p>pleeeeeease speed<\p>";
+      fetch("/home.html")
+        .then((res) => res.text())
+        .then((data) => {
+          console.log(data);
+        });
+      async function goToPage(pageName) {
+        if (pageName === "home") {
+          fetch("home.html") // Replace with the actual filename
+            .then((response) => {
+              if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+              }
+              return response.text(); // Use .text() to get the HTML content as a string
+            })
+            .then((htmlContent) => {
+              cont.innerHTML = htmlContent;
+              // console.log(htmlContent);
+              // For example, inject it into an element on your page:
+              // document.getElementById('content-area').innerHTML = htmlContent;
+            })
+            .catch((error) => {
+              console.error("Error fetching HTML:", error);
+            });
+          // cont.innerHTML = "<p>pleeeeeease speed<\p>";
+          // cont.innerHTML = "<p>pleeeeeease speed<\p>";
+        } else if (pageName === "contact") {
+          cont.innerHTML = "<p>i need this<\p>";
+        }
+      }
+      goToPage("home");
+    </script>
+  </body>
 </html>
