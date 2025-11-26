@@ -5,9 +5,53 @@ const pageContents = {
 <p>I am a third-year Mechanical and Mechatronic Engineering student.</p>
 `,
 
+"osteotomy-psi": `
+<h1>osteotomy</h1>
+<p>cut bone</p>
+`,
+
 "all-projects": `
 <h1>All Projects</h1>
-<p>osteotomy</p>
+<div class="container-fluid p-0">
+    <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+            <a onclick="goToPage('osteotomy-psi')" href="#" class="thumbnail" style="text-decoration: none;">
+                <img src="pages/contact/network_banner.jpg" class="img-fluid" style="aspect-ratio: 1.4; object-fit: cover" alt="...">
+                <p style="text-align: center;">project name</p>
+            </a>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+            <a href="#" class="thumbnail" style="text-decoration: none;">
+                <img src="pages/contact/network_banner.jpg" class="img-fluid" style="aspect-ratio: 1.4; object-fit: cover" alt="...">
+                <p style="text-align: center;">project name</p>
+            </a>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+            <a href="#" class="thumbnail" style="text-decoration: none;">
+                <img src="pages/contact/network_banner.jpg" class="img-fluid" style="aspect-ratio: 1.4; object-fit: cover" alt="...">
+                <p style="text-align: center;">project name</p>
+            </a>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+            <a href="#" class="thumbnail" style="text-decoration: none;">
+                <img src="pages/contact/network_banner.jpg" class="img-fluid" style="aspect-ratio: 1.4; object-fit: cover" alt="...">
+                <p style="text-align: center;">project name</p>
+            </a>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+            <a href="#" class="thumbnail" style="text-decoration: none;">
+                <img src="pages/contact/network_banner.jpg" class="img-fluid" style="aspect-ratio: 1.4; object-fit: cover" alt="...">
+                <p style="text-align: center;;">project name</p>
+            </a>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+            <a href="#" class="thumbnail" style="text-decoration: none;">
+                <img src="pages/contact/network_banner.jpg" class="img-fluid" style="aspect-ratio: 1.4; object-fit: cover" alt="...">
+                <p style="text-align: center;">project name</p>
+            </a>
+        </div>
+    </div>
+</div>
 `,
 
 "skills": `
@@ -47,6 +91,10 @@ const pageContents = {
 
 const banners = {
 "home": `
+<img>
+`,
+
+"osteotomy-psi": `
 <img>
 `,
 
