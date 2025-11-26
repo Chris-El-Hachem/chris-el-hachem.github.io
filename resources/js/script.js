@@ -63,7 +63,7 @@ const banners = {
 `,
 
 "contact": `
-<img src="resources/icons/network_banner.jpg" class="img-fluid" alt="...">
+<img src="pages/contact/network_banner.jpg" class="img-fluid" alt="...">
 `,
 }
 
