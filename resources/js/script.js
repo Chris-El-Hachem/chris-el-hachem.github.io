@@ -119,9 +119,12 @@ const cont = document.getElementById("main-content");
 const banner_div = document.getElementById("banner")
 
 async function goToPage(pageName) {
+    if (!pageContents.hasOwnProperty(pageName)) return; 
+    // The whitelist condition above ensures that this function will 
+    // only change the inner HTML if the new HTML comes from the 
+    // object, preventing JS injections and other bad stuff.
     cont.innerHTML = pageContents[pageName];
     banner_div.innerHTML = banners[pageName];
-
 }
 
 goToPage("home");
