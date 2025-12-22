@@ -32,7 +32,13 @@ const pageContents = {
 
 
 "osteotomy-psi": `
+<style>
+    img {
+        border-radius: 15px; 
+    }
+</style>
 <h1>Osteotomy PSI</h1>
+<p>Design Challenge for Personalised Surgery</p>
 <h2>Summary</h2>
 <p>I designed a surgical guide for an osteotomy (a surgery where bone is cut and realigned). This precise 3D-printed object mounts onto the surface of a bone in surgery, helping to guide the surgeons' drills and saws. I also designed a plate to secure the realigned bone so it can heal safely and steadily.</p>
 <h2>Skills Used</h2>
@@ -157,6 +163,7 @@ const pageContents = {
 
 "pliers": `
 <h1>Monolithic Pliers</h1>
+<p>University Project</p>
 <h2>Summary</h2>
 <p>I designed a pair of 3D-printed pliers that are monolithic (printable in one piece with minimal post-processing). My design weighs under 20 g but can apply over 4 kg of clamping force before breaking.</p>
 <h2>Skills Used</h2>
@@ -173,40 +180,47 @@ const pageContents = {
 "all-projects": `
 <h1>All Projects</h1>
 <div class="container-fluid p-0">
+    <style>
+        img {
+            border-radius: 15px; 
+            aspect-ratio: 1.4; 
+            object-fit: cover;
+        }
+    </style>
     <div class="row">
         <div class="card col-xs-6 col-sm-6 col-md-4 col-lg-3">
             <a onclick="goToPage('osteotomy-psi')" href="#" class="thumbnail" style="text-decoration: none;">
-                <img src="pages/osteotomy-psi/osteotomy_banner.png" class="img-fluid" style="aspect-ratio: 1.4; object-fit: cover" alt="...">
+                <img src="pages/osteotomy-psi/osteotomy_banner.png" class="img-fluid" alt="...">
                 <p style="text-align: center;">Osteotomy PSI</p>
             </a>
         </div>
         <div class="card col-xs-6 col-sm-6 col-md-4 col-lg-3">
             <a href="#" class="thumbnail" style="text-decoration: none;">
-                <img src="pages/contact/network_banner.jpg" class="img-fluid" style="aspect-ratio: 1.4; object-fit: cover" alt="...">
+                <img src="pages/contact/network_banner.jpg" class="img-fluid" alt="...">
                 <p style="text-align: center;">project name</p>
             </a>
         </div>
         <div class="card col-xs-6 col-sm-6 col-md-4 col-lg-3">
             <a href="#" class="thumbnail" style="text-decoration: none;">
-                <img src="pages/contact/network_banner.jpg" class="img-fluid" style="aspect-ratio: 1.4; object-fit: cover" alt="...">
+                <img src="pages/contact/network_banner.jpg" class="img-fluid" alt="...">
                 <p style="text-align: center;">project name</p>
             </a>
         </div>
         <div class="card col-xs-6 col-sm-6 col-md-4 col-lg-3">
             <a href="#" class="thumbnail" style="text-decoration: none;">
-                <img src="pages/contact/network_banner.jpg" class="img-fluid" style="aspect-ratio: 1.4; object-fit: cover" alt="...">
+                <img src="pages/contact/network_banner.jpg" class="img-fluid" alt="...">
                 <p style="text-align: center;">project name</p>
             </a>
         </div>
         <div class="card col-xs-6 col-sm-6 col-md-4 col-lg-3">
             <a href="#" class="thumbnail" style="text-decoration: none;">
-                <img src="pages/contact/network_banner.jpg" class="img-fluid" style="aspect-ratio: 1.4; object-fit: cover" alt="...">
+                <img src="pages/contact/network_banner.jpg" class="img-fluid" alt="...">
                 <p style="text-align: center;;">project name</p>
             </a>
         </div>
         <div class="card col-xs-6 col-sm-6 col-md-4 col-lg-3">
             <a href="#" class="thumbnail" style="text-decoration: none;">
-                <img src="pages/contact/network_banner.jpg" class="img-fluid" style="aspect-ratio: 1.4; object-fit: cover" alt="...">
+                <img src="pages/contact/network_banner.jpg" class="img-fluid" alt="...">
                 <p style="text-align: center;">project name</p>
             </a>
         </div>
@@ -216,7 +230,46 @@ const pageContents = {
 
 "skills": `
 <h1>Skills</h1>
-<p>website</p>
+<ul>
+    <li><b>Programming Languages</b> - Python, Java, C, C++, JavaScript, MATLAB</li>
+    <li><b>Systems</b> - Windows, Linux (Ubuntu), Macintosh</li>
+    <li><b>CAD Software</b> - SOLIDWORKS, Autodesk Fusion</li>
+    <li><b>Additive Manufacturing</b></li>
+    <li><b>Hardware</b> - Arduino, STM-32, ESP32, FPGA</li>
+    <li><b>Other Relevant Software</b> - MS Office Suite</li>
+</ul><br>
+
+
+<h1>Experience</h1>
+<p><b>Jan 2025 - Jun 2025</b><br>
+Company: Windtech Consultants<br>
+<b>Role: Assistant Laboratory Engineer</b>
+<ul>
+    <li>Constructing scaled building/terrain models with hand and power tools, operating CNC machinery for precise fabrication</li>
+    <li>Installing and testing pressure instrumentation on 3D-printed models to ensure experimental readiness</li>
+    <li>Supporting engineers with wind tunnel setup and testing, contributing to successful experiments</li>
+</ul><br>
+</p>
+
+<p><b>Feb 2025 - May 2025</b><br>
+Company: University of Technology Sydney<br>
+<b>Role: Embedded Mechatronic Systems Tutor</b>
+<ul>
+    <li>Tutoring students in FPGA and microcontroller programming, providing guidance to deepen understanding and technical skill</li>
+    <li>Helping students improve assignment performance and maximise marks through targeted support</li>
+    <li>Evaluating student performance and providing applicable feedback</li>
+</ul><br>
+</p>
+
+
+<h1>Education</h1>
+<p><b>Feb 2023 - Dec 2027 (expected)</b><br>
+University of Technology Sydney<br>
+<b>Degree: Bachelor of Engineering (Honours) Diploma in Professional Engineering Practice</b>
+<ul>
+    <li>Majoring in Mechanical and Mechatronic Engineering</li>
+</ul><br>
+</p>
 `,
 
 "about": `
