@@ -5,27 +5,27 @@ const pageContents = {
 <p>I'm a third-year Mechanical and Mechatronic Engineering student with a passion for programming and 3D printing.</p>
 <p>Below are some projects I've worked on:</p>
 <div class="card p-2">
-<div class="row">
-    <div class="col-md-4">
-        <h2>Osteotomy PSI</h2>
-        <p>I designed a surgical guide for an osteotomy (a surgery where bone is cut and realigned). This precise 3D-printed object mounts onto the surface of a bone in surgery, helping to guide the surgeons' drills and saws. I also designed a plate to secure the realigned bone so it can heal safely and steadily.</p>
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Osteotomy PSI</h2>
+            <p>I designed a surgical guide for an osteotomy (a surgery where bone is cut and realigned). This precise 3D-printed object mounts onto the surface of a bone in surgery, helping to guide the surgeons' drills and saws. I also designed a plate to secure the realigned bone so it can heal safely and steadily.</p>
+        </div>
+        <div class="col-md-4">
+            <h3>Skills Used</h3>
+            <ul>
+                <li>X-Ray Analysis</li>
+                <li>CT Scan Segmentation (Horos)</li>
+                <li>CAD (Blender)</li>
+                <li>3D Printing</li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <a onclick="goToPage('osteotomy-psi')" href="#" class="thumbnail" style="text-decoration: none;">
+                <img src="pages/osteotomy-psi/osteotomy_banner.png" class="img-fluid" style="aspect-ratio: 1.4; object-fit: cover" alt="...">
+                <p style="text-align: center;">Click for more info</p>
+            </a>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h3>Skills Used</h3>
-        <ul>
-            <li>X-Ray Analysis</li>
-            <li>CT Scan Segmentation (Horos)</li>
-            <li>CAD (Blender)</li>
-            <li>3D Printing</li>
-        </ul>
-    </div>
-    <div class="col-md-4">
-        <a onclick="goToPage('osteotomy-psi')" href="#" class="thumbnail" style="text-decoration: none;">
-            <img src="pages/osteotomy-psi/osteotomy_banner.png" class="img-fluid" style="aspect-ratio: 1.4; object-fit: cover" alt="...">
-            <p style="text-align: center;">Click for more info</p>
-        </a>
-    </div>
-</div>
 </div>
 `,
 
@@ -37,10 +37,10 @@ const pageContents = {
 <p>I designed a surgical guide for an osteotomy (a surgery where bone is cut and realigned). This precise 3D-printed object mounts onto the surface of a bone in surgery, helping to guide the surgeons' drills and saws. I also designed a plate to secure the realigned bone so it can heal safely and steadily.</p>
 <h2>Skills Used</h2>
 <ul>
-<li>X-Ray Analysis</li>
-<li>CT Scan Segmentation (Horos)</li>
-<li>CAD (Blender)</li>
-<li>3D Printing</li>
+    <li>X-Ray Analysis</li>
+    <li>CT Scan Segmentation (Horos)</li>
+    <li>CAD (Blender)</li>
+    <li>3D Printing</li>
 </ul>
 
 <h2>Context</h2>
@@ -50,37 +50,38 @@ const pageContents = {
 
 <p></p>
 <div class="row">
-<div class="col-md-10">
-<h2>X-Ray Analysis</h2>
-<p>The PSI designing process begins by deciding if the patient requires surgery and, if so, what type of surgery is best. These decisions are informed by a coronal alignment analysis on an x-ray image.</p>
-<p>Mechanical axes and contact planes are drawn over the leg bones. Measurements are taken on these drawn features and compared to what is considered the healthy range. The two most important measurements are the hip-knee-ankle angle (which measures how much the legs bow inwards or outwards) and the weight-bearing line percentage (which quantifies the unevenness of weight distribution on the patient's knee). The measurements determined that the left leg has normal measurements, but the right leg bows inwards (known as a valgus deformity) with a significantly uneven weight distribution on the knee.</p>
-</div>
-<div class="col-md-2">
-<img src="pages/osteotomy-psi/measurements.png" class="img-fluid" style="aspect-ratio: 0.5; object-fit: cover" alt="...">
-<p style="text-align: center;">Mechanical Axes of Legs</p>
-</div>
+    <div class="col-md-10">
+        <h2>X-Ray Analysis</h2>
+        <p>The PSI designing process begins by deciding if the patient requires surgery and, if so, what type of surgery is best. These decisions are informed by a coronal alignment analysis on an x-ray image.</p>
+        <p>Mechanical axes and contact planes are drawn over the leg bones. Measurements are taken on these drawn features and compared to what is considered the healthy range. The two most important measurements are the hip-knee-ankle angle (which measures how much the legs bow inwards or outwards) and the weight-bearing line percentage (which quantifies the unevenness of weight distribution on the patient's knee). The measurements determined that the left leg has normal measurements, but the right leg bows inwards (known as a valgus deformity) with a significantly uneven weight distribution on the knee.</p>
+    </div>
+    <div class="col-md-2">
+        <img src="pages/osteotomy-psi/measurements.png" class="img-fluid" style="aspect-ratio: 0.5; object-fit: cover" alt="...">
+        <p style="text-align: center;">Mechanical Axes of Legs</p>
+    </div>
 </div>
 <div class="row">
-<div class="col-md-2">
-<img src="pages/osteotomy-psi/miniaci.png" class="img-fluid" style="aspect-ratio: 1; object-fit: cover" alt="...">
-<p style="text-align: center;">Wedge Angle with Miniaci Method</p>
-</div>
-<div class="col-md-10">
-<p>To combat this, the bone can undergo either a closing-wedge surgery on the inner leg (medial side) or opening-wedge on the outer leg (lateral side). I chose the closing-wedge surgery because it doesn't need a bone graft, it heals quickly, is more stable, more predictable, and easier to access in surgery while avoiding nerves, muscle, tendons, blood vessels and cartilage. This surgery can be conducted on the upper tibia or lower femur. I chose the upper tibia because it is easier to access, and the measurements I conducted suggests that the leg deformity partially originates from the tibia.</p>
-<p>I found the suitable correction angle for the wedge using the Miniaci method, a reliable geometric heuristic. I plan the wedge to not cut entirely through the bone, so a thin bridge of bone can help stabilise the site during surgery and healing. I placed the hinge point ~15 mm below the top of the tibia and ~7.5 mm inwards from the lateral side of the bone. I calculated the correction angle to be ~7&deg.</p>
+    <div class="col-md-2">
+        <img src="pages/osteotomy-psi/miniaci.png" class="img-fluid" style="aspect-ratio: 1; object-fit: cover" alt="...">
+        <p style="text-align: center;">Wedge Angle with Miniaci Method</p>
+    </div>
+    <div class="col-md-10">
+        <p>To combat this, the bone can undergo either a closing-wedge surgery on the inner leg (medial side) or opening-wedge on the outer leg (lateral side). I chose the closing-wedge surgery because it doesn't need a bone graft, it heals quickly, is more stable, more predictable, and easier to access in surgery while avoiding nerves, muscle, tendons, blood vessels and cartilage. This surgery can be conducted on the upper tibia or lower femur. I chose the upper tibia because it is easier to access, and the measurements I conducted suggests that the leg deformity partially originates from the tibia.</p>
+        <p>I found the suitable correction angle for the wedge using the Miniaci method, a reliable geometric heuristic. I plan the wedge to not cut entirely through the bone, so a thin bridge of bone can help stabilise the site during surgery and healing. I placed the hinge point ~15 mm below the top of the tibia and ~7.5 mm inwards from the lateral side of the bone. I calculated the correction angle to be ~7&deg.</p>
+    </div>
 </div>
 
 <p></p>
 
 <div class="row">
-<div class="col-md-10">
-<h2>CT Scan Segmentation</h2>
-<p>To design the suitable PSI's, I first needed a 3D model of the section of the bone where the surgery was planned to happen. The patient has a CT scan which contains detailed data of their skeleton, organs and flesh. Using software like Horos (what I used) or 3D Slicer, these different body structures can be segmented (separated into distinct volumes). With the bones of the patient's right knee segmented, the software can then turn the desired volume into a 3D mesh, a suitable file type for planning the surgery and designing the PSI's.</p>
-</div>
-<div class="col-md-2">
-<img src="pages/osteotomy-psi/segment.png" class="img-fluid" style="aspect-ratio: 1; object-fit: cover" alt="...">
-<p style="text-align: center;">CT Scan Segmented Bone</p>
-</div>
+    <div class="col-md-10">
+        <h2>CT Scan Segmentation</h2>
+        <p>To design the suitable PSI's, I first needed a 3D model of the section of the bone where the surgery was planned to happen. The patient has a CT scan which contains detailed data of their skeleton, organs and flesh. Using software like Horos (what I used) or 3D Slicer, these different body structures can be segmented (separated into distinct volumes). With the bones of the patient's right knee segmented, the software can then turn the desired volume into a 3D mesh, a suitable file type for planning the surgery and designing the PSI's.</p>
+    </div>
+    <div class="col-md-2">
+        <img src="pages/osteotomy-psi/segment.png" class="img-fluid" style="aspect-ratio: 1; object-fit: cover" alt="...">
+        <p style="text-align: center;">CT Scan Segmented Bone</p>
+    </div>
 </div>
 
 <p></p>
@@ -88,56 +89,56 @@ const pageContents = {
 <h2>Surgical Simulation</h2>
 <p>To simulate the surgery on the bone, I used Blender as it is a very powerful and competent software for manipulating 3D meshes.</p>
 <div class="row">
-<div class="col-md-3">
-<img src="pages/osteotomy-psi/before_surgery.png" class="img-fluid" style="aspect-ratio: 1; object-fit: cover" alt="...">
-<p style="text-align: center;">Before Surgery</p>
-</div>
-<div class="col-md-3">
-<img src="pages/osteotomy-psi/wedge_cut.png" class="img-fluid" style="aspect-ratio: 1; object-fit: cover" alt="...">
-<p style="text-align: center;">Wedge Cut</p>
-</div>
-<div class="col-md-3">
-<img src="pages/osteotomy-psi/overlay.gif" class="img-fluid" style="aspect-ratio: 1; object-fit: cover" alt="...">
-<p style="text-align: center;">Comparison with X-Ray</p>
-</div>
-<div class="col-md-3">
-<img src="pages/osteotomy-psi/realigned.png" class="img-fluid" style="aspect-ratio: 1; object-fit: cover" alt="...">
-<p style="text-align: center;">Bone Realigned</p>
-</div>
-</div>
-
-<p></p>
-
-<div class="row">
-<div class="col-md-8">
-<h2>Plate Design</h2>
-<p>This is my design for the implant plate to hold the osteotomised bone together. It conforms to the shape of the tibia, and is fixed in place with screws. The screw holes are spaced apart and account for redundant screws, increasing rigidity. The size of the implant is compact to be as non-intrusive as possible while still being rigid. The implant is chosen to be constructed out of titanium as it is non-toxic and durable. However, my future considerations include using bioabsorbable polymers for the plate and screws so they don't have to be removed through surgery.</p>
-</div>
-<div class="col-md-2">
-<img src="pages/osteotomy-psi/plate_model.png" class="img-fluid" style="aspect-ratio: 1; object-fit: cover" alt="...">
-<p style="text-align: center;">Plate Blender Model</p>
-</div>
-<div class="col-md-2">
-<img src="pages/osteotomy-psi/plate3D.jpg" class="img-fluid" style="aspect-ratio: 1; object-fit: cover" alt="...">
-<p style="text-align: center;">Plate 3D-Printed Model</p>
-</div>
+    <div class="col-md-3">
+        <img src="pages/osteotomy-psi/before_surgery.png" class="img-fluid" style="aspect-ratio: 1; object-fit: cover" alt="...">
+        <p style="text-align: center;">Before Surgery</p>
+    </div>
+    <div class="col-md-3">
+        <img src="pages/osteotomy-psi/wedge_cut.png" class="img-fluid" style="aspect-ratio: 1; object-fit: cover" alt="...">
+        <p style="text-align: center;">Wedge Cut</p>
+    </div>
+    <div class="col-md-3">
+        <img src="pages/osteotomy-psi/overlay.gif" class="img-fluid" style="aspect-ratio: 1; object-fit: cover" alt="...">
+        <p style="text-align: center;">Comparison with X-Ray</p>
+    </div>
+    <div class="col-md-3">
+        <img src="pages/osteotomy-psi/realigned.png" class="img-fluid" style="aspect-ratio: 1; object-fit: cover" alt="...">
+        <p style="text-align: center;">Bone Realigned</p>
+    </div>
 </div>
 
 <p></p>
 
 <div class="row">
-<div class="col-md-2">
-<img src="pages/osteotomy-psi/guide_model.png" class="img-fluid" style="aspect-ratio: 1; object-fit: cover" alt="...">
-<p style="text-align: center;">Guide Blender Model</p>
+    <div class="col-md-8">
+        <h2>Plate Design</h2>
+        <p>This is my design for the implant plate to hold the osteotomised bone together. It conforms to the shape of the tibia, and is fixed in place with screws. The screw holes are spaced apart and account for redundant screws, increasing rigidity. The size of the implant is compact to be as non-intrusive as possible while still being rigid. The implant is chosen to be constructed out of titanium as it is non-toxic and durable. However, my future considerations include using bioabsorbable polymers for the plate and screws so they don't have to be removed through surgery.</p>
+    </div>
+    <div class="col-md-2">
+        <img src="pages/osteotomy-psi/plate_model.png" class="img-fluid" style="aspect-ratio: 1; object-fit: cover" alt="...">
+        <p style="text-align: center;">Plate Blender Model</p>
+    </div>
+    <div class="col-md-2">
+        <img src="pages/osteotomy-psi/plate3D.jpg" class="img-fluid" style="aspect-ratio: 1; object-fit: cover" alt="...">
+        <p style="text-align: center;">Plate 3D-Printed Model</p>
+    </div>
 </div>
-<div class="col-md-2">
-<img src="pages/osteotomy-psi/guide3D.jpg" class="img-fluid" style="aspect-ratio: 1; object-fit: cover" alt="...">
-<p style="text-align: center;">Guide 3D-Printed Model</p>
-</div>
-<div class="col-md-8">
-<h2>Surgical Guide Design</h2>
-<p>This is my design for the surgical guide. Like the implant plate, it conforms to the shape of the tibia. There are guide holes to secure the piece in place with screws, and to pre-drill screw holes. There are guide notches to precisely align the saw when making the upper and lower wedge cuts. It is made of titanium, a standard material for PSI's due to its non-toxicity and durability during cutting.</p>
-</div>
+
+<p></p>
+
+<div class="row">
+    <div class="col-md-2">
+        <img src="pages/osteotomy-psi/guide_model.png" class="img-fluid" style="aspect-ratio: 1; object-fit: cover" alt="...">
+        <p style="text-align: center;">Guide Blender Model</p>
+    </div>
+    <div class="col-md-2">
+        <img src="pages/osteotomy-psi/guide3D.jpg" class="img-fluid" style="aspect-ratio: 1; object-fit: cover" alt="...">
+        <p style="text-align: center;">Guide 3D-Printed Model</p>
+    </div>
+    <div class="col-md-8">
+        <h2>Surgical Guide Design</h2>
+        <p>This is my design for the surgical guide. Like the implant plate, it conforms to the shape of the tibia. There are guide holes to secure the piece in place with screws, and to pre-drill screw holes. There are guide notches to precisely align the saw when making the upper and lower wedge cuts. It is made of titanium, a standard material for PSI's due to its non-toxicity and durability during cutting.</p>
+    </div>
 </div>
 
 <p></p>
@@ -150,6 +151,21 @@ const pageContents = {
 <p>Sivertsen, E. A., Vik, J., Meland, A. S. V., & Nerhus, T. K. (2023). The Dugdale planning method for high tibial osteotomies underestimates the correction angle compared to the Miniaci method. <em>Knee Surgery, Sports Traumatology, Arthroscopy, 31</em>(4), 1795. doi:10.1007/s00167-021-06663-z</p>
 <p>Tabern&eacutee Heijtmeijer, S. J. C., Meesters, A. M. L., Verdonschot, N. J. J., Jutte, P. C., Doornberg, J. N., Pijpker, P. A. J., & Kraeima, J. (2025). Postoperative accuracy quantification of corrective osteotomies: standardisation of Q3D-CT methodology. <em>European Journal of Trauma and Emergency Surgery, 51</em>(1), 81. doi:10.1007/s00068-024-02684-8</p>
 </div>
+`,
+
+
+
+"pliers": `
+<h1>Monolithic Pliers</h1>
+<h2>Summary</h2>
+<p>I designed a pair of 3D-printed pliers that are monolithic (printable in one piece with minimal post-processing). My design weighs under 20 g but can apply over 4 kg of clamping force before breaking.</p>
+<h2>Skills Used</h2>
+<ul>
+    <li>CAD (Autodesk Fusion)</li>
+    <li>Design for Additive Manufacturing</li>
+    <li>Finite Element Analysis</li>
+    <li>3D Printing</li>
+</ul>
 `,
 
 
@@ -240,6 +256,10 @@ const banners = {
 
 "osteotomy-psi": `
 <img src="pages/osteotomy-psi/osteotomy_banner.png" class="img-fluid" alt="...">
+`,
+
+"pliers": `
+
 `,
 
 "all-projects": `
