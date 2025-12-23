@@ -19,9 +19,9 @@ const pageContents = {
                 <li>3D Printing</li>
             </ul>
         </div>
-        <div class="col-md-4">
+        <div class="floaty-card col-md-4">
             <a onclick="goToPage('osteotomy-psi')" href="#" class="thumbnail" style="text-decoration: none;">
-                <img src="pages/osteotomy-psi/osteotomy_banner.png" class="img-fluid" style="aspect-ratio: 1.4; object-fit: cover" alt="...">
+                <img src="pages/osteotomy-psi/osteotomy_banner.png" class="img-fluid icon-img" style="aspect-ratio: 1.4; object-fit: cover" alt="...">
                 <p style="text-align: center;">Click for more info</p>
             </a>
         </div>
@@ -33,7 +33,7 @@ const pageContents = {
 
 "osteotomy-psi": `
 <style>
-    img {
+    .img {
         border-radius: 15px; 
     }
 </style>
@@ -62,13 +62,13 @@ const pageContents = {
         <p>Mechanical axes and contact planes are drawn over the leg bones. Measurements are taken on these drawn features and compared to what is considered the healthy range. The two most important measurements are the hip-knee-ankle angle (which measures how much the legs bow inwards or outwards) and the weight-bearing line percentage (which quantifies the unevenness of weight distribution on the patient's knee). The measurements determined that the left leg has normal measurements, but the right leg bows inwards (known as a valgus deformity) with a significantly uneven weight distribution on the knee.</p>
     </div>
     <div class="col-md-2">
-        <img src="pages/osteotomy-psi/measurements.png" class="img-fluid" style="aspect-ratio: 0.5; object-fit: cover" alt="...">
+        <img src="pages/osteotomy-psi/measurements.png" class="img-fluid page-img" style="aspect-ratio: 0.5;" alt="...">
         <p style="text-align: center;">Mechanical Axes of Legs</p>
     </div>
 </div>
 <div class="row">
     <div class="col-md-2">
-        <img src="pages/osteotomy-psi/miniaci.png" class="img-fluid" style="aspect-ratio: 1; object-fit: cover" alt="...">
+        <img src="pages/osteotomy-psi/miniaci.png" class="img-fluid page-img" style="aspect-ratio: 1;" alt="...">
         <p style="text-align: center;">Wedge Angle with Miniaci Method</p>
     </div>
     <div class="col-md-10">
@@ -85,7 +85,7 @@ const pageContents = {
         <p>To design the suitable PSI's, I first needed a 3D model of the section of the bone where the surgery was planned to happen. The patient has a CT scan which contains detailed data of their skeleton, organs and flesh. Using software like Horos (what I used) or 3D Slicer, these different body structures can be segmented (separated into distinct volumes). With the bones of the patient's right knee segmented, the software can then turn the desired volume into a 3D mesh, a suitable file type for planning the surgery and designing the PSI's.</p>
     </div>
     <div class="col-md-2">
-        <img src="pages/osteotomy-psi/segment.png" class="img-fluid" style="aspect-ratio: 1; object-fit: cover" alt="...">
+        <img src="pages/osteotomy-psi/segment.png" class="img-fluid page-img" style="aspect-ratio: 1;" alt="...">
         <p style="text-align: center;">CT Scan Segmented Bone</p>
     </div>
 </div>
@@ -96,19 +96,19 @@ const pageContents = {
 <p>To simulate the surgery on the bone, I used Blender as it is a very powerful and competent software for manipulating 3D meshes.</p>
 <div class="row">
     <div class="col-md-3">
-        <img src="pages/osteotomy-psi/before_surgery.png" class="img-fluid" style="aspect-ratio: 1; object-fit: cover" alt="...">
+        <img src="pages/osteotomy-psi/before_surgery.png" class="img-fluid page-img" style="aspect-ratio: 1;" alt="...">
         <p style="text-align: center;">Before Surgery</p>
     </div>
     <div class="col-md-3">
-        <img src="pages/osteotomy-psi/wedge_cut.png" class="img-fluid" style="aspect-ratio: 1; object-fit: cover" alt="...">
+        <img src="pages/osteotomy-psi/wedge_cut.png" class="img-fluid page-img" style="aspect-ratio: 1;" alt="...">
         <p style="text-align: center;">Wedge Cut</p>
     </div>
     <div class="col-md-3">
-        <img src="pages/osteotomy-psi/overlay.gif" class="img-fluid" style="aspect-ratio: 1; object-fit: cover" alt="...">
+        <img src="pages/osteotomy-psi/overlay.gif" class="img-fluid page-img" style="aspect-ratio: 1;" alt="...">
         <p style="text-align: center;">Comparison with X-Ray</p>
     </div>
     <div class="col-md-3">
-        <img src="pages/osteotomy-psi/realigned.png" class="img-fluid" style="aspect-ratio: 1; object-fit: cover" alt="...">
+        <img src="pages/osteotomy-psi/realigned.png" class="img-fluid page-img" style="aspect-ratio: 1;" alt="...">
         <p style="text-align: center;">Bone Realigned</p>
     </div>
 </div>
@@ -121,11 +121,11 @@ const pageContents = {
         <p>This is my design for the implant plate to hold the osteotomised bone together. It conforms to the shape of the tibia, and is fixed in place with screws. The screw holes are spaced apart and account for redundant screws, increasing rigidity. The size of the implant is compact to be as non-intrusive as possible while still being rigid. The implant is chosen to be constructed out of titanium as it is non-toxic and durable. However, my future considerations include using bioabsorbable polymers for the plate and screws so they don't have to be removed through surgery.</p>
     </div>
     <div class="col-md-2">
-        <img src="pages/osteotomy-psi/plate_model.png" class="img-fluid" style="aspect-ratio: 1; object-fit: cover" alt="...">
+        <img src="pages/osteotomy-psi/plate_model.png" class="img-fluid page-img" style="aspect-ratio: 1;" alt="...">
         <p style="text-align: center;">Plate Blender Model</p>
     </div>
     <div class="col-md-2">
-        <img src="pages/osteotomy-psi/plate3D.jpg" class="img-fluid" style="aspect-ratio: 1; object-fit: cover" alt="...">
+        <img src="pages/osteotomy-psi/plate3D.jpg" class="img-fluid page-img" style="aspect-ratio: 1;" alt="...">
         <p style="text-align: center;">Plate 3D-Printed Model</p>
     </div>
 </div>
@@ -134,11 +134,11 @@ const pageContents = {
 
 <div class="row">
     <div class="col-md-2">
-        <img src="pages/osteotomy-psi/guide_model.png" class="img-fluid" style="aspect-ratio: 1; object-fit: cover" alt="...">
+        <img src="pages/osteotomy-psi/guide_model.png" class="img-fluid page-img" style="aspect-ratio: 1;" alt="...">
         <p style="text-align: center;">Guide Blender Model</p>
     </div>
     <div class="col-md-2">
-        <img src="pages/osteotomy-psi/guide3D.jpg" class="img-fluid" style="aspect-ratio: 1; object-fit: cover" alt="...">
+        <img src="pages/osteotomy-psi/guide3D.jpg" class="img-fluid page-img" style="aspect-ratio: 1;" alt="...">
         <p style="text-align: center;">Guide 3D-Printed Model</p>
     </div>
     <div class="col-md-8">
@@ -180,47 +180,40 @@ const pageContents = {
 "all-projects": `
 <h1>All Projects</h1>
 <div class="container-fluid p-0">
-    <style>
-        img {
-            border-radius: 15px; 
-            aspect-ratio: 1.4; 
-            object-fit: cover;
-        }
-    </style>
     <div class="row">
-        <div class="card col-xs-6 col-sm-6 col-md-4 col-lg-3">
+        <div class="floaty-card col-xs-6 col-sm-6 col-md-4 col-lg-3">
             <a onclick="goToPage('osteotomy-psi')" href="#" class="thumbnail" style="text-decoration: none;">
-                <img src="pages/osteotomy-psi/osteotomy_banner.png" class="img-fluid" alt="...">
+                <img src="pages/osteotomy-psi/osteotomy_banner.png" class="img-fluid icon-img" alt="...">
                 <p style="text-align: center;">Osteotomy PSI</p>
             </a>
         </div>
-        <div class="card col-xs-6 col-sm-6 col-md-4 col-lg-3">
+        <div class="floaty-card col-xs-6 col-sm-6 col-md-4 col-lg-3">
             <a href="#" class="thumbnail" style="text-decoration: none;">
-                <img src="pages/contact/network_banner.jpg" class="img-fluid" alt="...">
+                <img src="pages/contact/network_banner.jpg" class="img-fluid icon-img" alt="...">
                 <p style="text-align: center;">project name</p>
             </a>
         </div>
-        <div class="card col-xs-6 col-sm-6 col-md-4 col-lg-3">
+        <div class="floaty-card col-xs-6 col-sm-6 col-md-4 col-lg-3">
             <a href="#" class="thumbnail" style="text-decoration: none;">
-                <img src="pages/contact/network_banner.jpg" class="img-fluid" alt="...">
+                <img src="pages/contact/network_banner.jpg" class="img-fluid icon-img" alt="...">
                 <p style="text-align: center;">project name</p>
             </a>
         </div>
-        <div class="card col-xs-6 col-sm-6 col-md-4 col-lg-3">
+        <div class="floaty-card col-xs-6 col-sm-6 col-md-4 col-lg-3">
             <a href="#" class="thumbnail" style="text-decoration: none;">
-                <img src="pages/contact/network_banner.jpg" class="img-fluid" alt="...">
+                <img src="pages/contact/network_banner.jpg" class="img-fluid icon-img" alt="...">
                 <p style="text-align: center;">project name</p>
             </a>
         </div>
-        <div class="card col-xs-6 col-sm-6 col-md-4 col-lg-3">
+        <div class="floaty-card col-xs-6 col-sm-6 col-md-4 col-lg-3">
             <a href="#" class="thumbnail" style="text-decoration: none;">
-                <img src="pages/contact/network_banner.jpg" class="img-fluid" alt="...">
+                <img src="pages/contact/network_banner.jpg" class="img-fluid icon-img" alt="...">
                 <p style="text-align: center;;">project name</p>
             </a>
         </div>
-        <div class="card col-xs-6 col-sm-6 col-md-4 col-lg-3">
+        <div class="floaty-card col-xs-6 col-sm-6 col-md-4 col-lg-3">
             <a href="#" class="thumbnail" style="text-decoration: none;">
-                <img src="pages/contact/network_banner.jpg" class="img-fluid" alt="...">
+                <img src="pages/contact/network_banner.jpg" class="img-fluid icon-img" alt="...">
                 <p style="text-align: center;">project name</p>
             </a>
         </div>
