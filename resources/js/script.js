@@ -2,7 +2,7 @@ const pageContents = {
 "home": `
 <h1>Hi, I'm Chris!</h1>
 <p>Thanks for checking out my portfolio!</p>
-<p>I'm a third-year Mechanical and Mechatronic Engineering student with a passion for programming and 3D printing.</p>
+<p>I'm a fourth-year Mechanical and Mechatronic Engineering student with a passion for programming and 3D printing.</p>
 <p>Below are some projects I've worked on:</p>
 <div class="card p-2">
     <div class="row">
@@ -162,19 +162,100 @@ const pageContents = {
 
 
 "pliers": `
-<h1>Monolithic Pliers</h1>
-<p>University Project</p>
+<style>
+    .img {
+        border-radius: 15px; 
+    }
+</style>
+
+<div class="row">
+    <div class="col-md-8">
+        <h1>Monolithic Pliers</h1>
+        <p>University Project</p>
+        <h2>Summary</h2>
+        <p>I designed a pair of 3D-printed pliers that are monolithic (printable in one piece with minimal post-processing). My design weighs under 20 g but can apply over 4 kg of clamping force before breaking.</p>
+        <h2>Skills Used</h2>
+        <ul>
+            <li>CAD (Autodesk Fusion)</li>
+            <li>Design for Additive Manufacturing</li>
+            <li>Finite Element Analysis</li>
+            <li>3D Printing</li>
+        </ul>
+    </div>
+    <div class="col-md-4">
+        <img src="pages/pliers/pliers.jpg" class="img-fluid page-img" style="aspect-ratio: 1.5;" alt="...">
+        <p style="text-align: center;">Monolithic Pliers</p>
+    </div>
+</div>
+
+<p></p>
+
+<div class="row">
+    <div class="col-md-2">
+        <h2>Finite Element Analysis</h2>
+        <p>Mechanical property simulations were used to maximise part strength whilst minimising material usage. The design experiences the most stress near the hinge so I accumulated the most material around that section. The handles and jaws received much less stress, so I reduced the mass significantly in those areas.</p>
+    </div>
+    <div class="col-md-2">
+        <img src="pages/pliers/fea.png" class="img-fluid page-img" style="aspect-ratio: 0.5;" alt="...">
+        <p style="text-align: center;">Finite Element Analysis</p>
+    </div>
+    <div class="col-md-3">
+        <img src="pages/pliers/jaw-close.png" class="img-fluid page-img" style="aspect-ratio: 1.5;" alt="...">
+        <p style="text-align: center;">Pliers' Jaw</p>
+        <img src="pages/pliers/stress-layers.png" class="img-fluid page-img" style="aspect-ratio: 1.5;" alt="...">
+        <p style="text-align: center;">Stress Orientation</p>
+    </div>
+    <div class="col-md-5">
+        <h2>Strength Considerations</h2>
+        <p>Many curves and fillets were used in the design. This not only aids in the ergonomics of the pliers but also allows for a more even distribution of stress, which tends to accumulate at sharp edges.</p>
+        <p>The thickness of the truss beams was made to be an integer multiple of the 3d printer's wall thickness, optimising the strength and material usage in the design.</p>
+        <p>The pliers were designed to be printed in an orientation such that the strength of the parts during their function would not be hindered by anisotropy. Fused deposition modelling (FDM) parts are particularly susceptible to breaking, or delamination, when they experience forces that separate the layers. The forces applied to the handles and jaws, as well as the tension inside them, will be parallel to the layers, so there will not be tension pulling the layers apart. There will be no shear forces parallel to the layers outside of the hinge, which is the thickest part of the pliers to counteract this weakness.</p>
+    </div>
+</div>
+
+<p></p>
+
+<div class="row">
+    <div class="col-md-9">
+        <h2>Post-Processing Considerations</h2>
+        <p>No brims or rafts were necessary for the design, except for the required supports. The pliers have a large flat surface at the bottom, making extra adhesion material unnecessary. This decreases material waste, post-production time and the risk of damaging the print during post-production.</p>
+        <p>The part has been designed to make minimal use of supports, containing no overhangs outside the section where the two parts meet at the hinge. The hinge itself is sealed with a 40&deg slope, an overhang that is printable without supports. This minimises waste material, post-processing time and the risk of damaging the part during post-processing.</p>
+    </div>
+    <div class="col-md-3">
+        <img src="pages/pliers/prusa.png" class="img-fluid page-img" style="aspect-ratio: 1.5;" alt="...">
+        <p style="text-align: center;">Pliers' Hinge in PrusaSlicer</p>
+    </div>
+</div>
+`,
+
+
+"welding-sim": `
+<h1>Welding Robot Simulation</h1>
+<p>University Group Project</p>
 <h2>Summary</h2>
 <p>I designed a pair of 3D-printed pliers that are monolithic (printable in one piece with minimal post-processing). My design weighs under 20 g but can apply over 4 kg of clamping force before breaking.</p>
 <h2>Skills Used</h2>
 <ul>
-    <li>CAD (Autodesk Fusion)</li>
-    <li>Design for Additive Manufacturing</li>
-    <li>Finite Element Analysis</li>
-    <li>3D Printing</li>
+    <li>CAD (SOLIDWORKS and Blender)</li>
+    <li>MATLAB</li>
+    <li>Programming 6-DOF Robotic Arms</li>
+    <li>Linear Algebra</li>
 </ul>
 `,
 
+
+"hand-eye": `
+<h1>Robot Hand-Eye Calibration</h1>
+<p>University Group Project</p>
+<h2>Summary</h2>
+<p>I designed a pair of 3D-printed pliers that are monolithic (printable in one piece with minimal post-processing). My design weighs under 20 g but can apply over 4 kg of clamping force before breaking.</p>
+<h2>Skills Used</h2>
+<ul>
+    <li>MATLAB/ROS</li>
+    <li>Programming Robotic Arms</li>
+    <li>Linear Algebra</li>
+</ul>
+`,
 
 
 "all-projects": `
@@ -188,33 +269,21 @@ const pageContents = {
             </a>
         </div>
         <div class="floaty-card col-xs-6 col-sm-6 col-md-4 col-lg-3">
-            <a href="#" class="thumbnail" style="text-decoration: none;">
-                <img src="pages/contact/network_banner.jpg" class="img-fluid icon-img" alt="...">
-                <p style="text-align: center;">project name</p>
+            <a onclick="goToPage('pliers')" href="#" class="thumbnail" style="text-decoration: none;">
+                <img src="pages/pliers/pliers.jpg" class="img-fluid icon-img" alt="...">
+                <p style="text-align: center;">Monolithic Pliers</p>
             </a>
         </div>
         <div class="floaty-card col-xs-6 col-sm-6 col-md-4 col-lg-3">
-            <a href="#" class="thumbnail" style="text-decoration: none;">
+            <a onclick="goToPage('welding-sim')" href="#" class="thumbnail" style="text-decoration: none;">
                 <img src="pages/contact/network_banner.jpg" class="img-fluid icon-img" alt="...">
-                <p style="text-align: center;">project name</p>
+                <p style="text-align: center;">Welding Robot Simulation</p>
             </a>
         </div>
         <div class="floaty-card col-xs-6 col-sm-6 col-md-4 col-lg-3">
-            <a href="#" class="thumbnail" style="text-decoration: none;">
+            <a onclick="goToPage('hand-eye')" href="#" class="thumbnail" style="text-decoration: none;">
                 <img src="pages/contact/network_banner.jpg" class="img-fluid icon-img" alt="...">
-                <p style="text-align: center;">project name</p>
-            </a>
-        </div>
-        <div class="floaty-card col-xs-6 col-sm-6 col-md-4 col-lg-3">
-            <a href="#" class="thumbnail" style="text-decoration: none;">
-                <img src="pages/contact/network_banner.jpg" class="img-fluid icon-img" alt="...">
-                <p style="text-align: center;;">project name</p>
-            </a>
-        </div>
-        <div class="floaty-card col-xs-6 col-sm-6 col-md-4 col-lg-3">
-            <a href="#" class="thumbnail" style="text-decoration: none;">
-                <img src="pages/contact/network_banner.jpg" class="img-fluid icon-img" alt="...">
-                <p style="text-align: center;">project name</p>
+                <p style="text-align: center;">Robot Hand-Eye Calibration</p>
             </a>
         </div>
     </div>
@@ -305,6 +374,14 @@ const banners = {
 `,
 
 "pliers": `
+<img src="pages/pliers/pliers-banner.png" class="img-fluid" alt="...">
+`,
+
+"welding-sim": `
+
+`,
+
+"hand-eye": `
 
 `,
 
