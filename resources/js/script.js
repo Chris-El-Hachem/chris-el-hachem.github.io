@@ -1,16 +1,15 @@
 const pageContents = {
 "home": `
-<h1>Hi, I'm Chris!</h1>
-<p>Thanks for checking out my portfolio!</p>
-<p>I'm a fourth-year Mechanical and Mechatronic Engineering student with a passion for programming and 3D printing.</p>
-<p>Below are some projects I've worked on:</p>
-<div class="card p-2">
-    <div class="row">
-        <div class="col-md-4">
+<h1 style="text-align: center;">Hi, I'm Chris!</h1>
+<p style="text-align: center;">Thanks for checking out my portfolio!</p>
+<p style="text-align: center;">I'm a fourth-year Mechanical and Mechatronic Engineering student with a passion for programming and 3D printing.</p>
+<p style="text-align: center;">Below are some projects I've worked on (click the cards to learn more):</p>
+
+<div class="row">
+    <div class="col-md-4 floaty-card" onclick="goToPage('osteotomy-psi')">
+        <div class="card p-2">
             <h2>Osteotomy PSI</h2>
             <p>I designed a surgical guide for an osteotomy (a surgery where bone is cut and realigned). This precise 3D-printed object mounts onto the surface of a bone in surgery, helping to guide the surgeons' drills and saws. I also designed a plate to secure the realigned bone so it can heal safely and steadily.</p>
-        </div>
-        <div class="col-md-4">
             <h3>Skills Used</h3>
             <ul>
                 <li>X-Ray Analysis</li>
@@ -18,12 +17,34 @@ const pageContents = {
                 <li>CAD (Blender)</li>
                 <li>3D Printing</li>
             </ul>
+            <img src="pages/osteotomy-psi/osteotomy_banner.png" class="img-fluid icon-img" style="aspect-ratio: 1.4; object-fit: cover" alt="...">
         </div>
-        <div class="floaty-card col-md-4">
-            <a onclick="goToPage('osteotomy-psi')" href="#" class="thumbnail" style="text-decoration: none;">
-                <img src="pages/osteotomy-psi/osteotomy_banner.png" class="img-fluid icon-img" style="aspect-ratio: 1.4; object-fit: cover" alt="...">
-                <p style="text-align: center;">Click for more info</p>
-            </a>
+    </div>
+    <div class="col-md-4 floaty-card" onclick="goToPage('pliers')">
+        <div class="card p-2">
+            <h1>Monolithic Pliers</h1>
+            <p>I designed a pair of 3D-printed pliers that are monolithic (printable in one piece with minimal post-processing). My design weighs under 20 g but can apply over 4 kg of clamping force before breaking.</p>
+            <h2>Skills Used</h2>
+            <ul>
+                <li>CAD (Autodesk Fusion)</li>
+                <li>Design for Additive Manufacturing</li>
+                <li>Finite Element Analysis</li>
+                <li>3D Printing</li>
+            </ul>
+            <img src="pages/pliers/pliers.jpg" class="img-fluid icon-img" style="aspect-ratio: 1.4; object-fit: cover" alt="...">
+        </div>
+    </div>
+    <div class="col-md-4 floaty-card" onclick="goToPage('hand-eye')">
+        <div class="card p-2">
+            <h1>Robot Hand-Eye Calibration</h1>
+            <p>We implemented a hand-eye calibration system to connect the movement of a robot arm (DOBOT Magician) with the vision of a camera. By using a camera feed to direct the motion of a robot arm (a process known as visual servoing), the robot can avoid obstacles and interact with objects whose positions are not precisely known.</p>
+            <h2>Skills Used</h2>
+            <ul>
+                <li>MATLAB/ROS</li>
+                <li>Programming Robotic Arms</li>
+                <li>Linear Algebra</li>
+            </ul>
+            <img src="pages/hand-eye/testing.jpg" class="img-fluid icon-img" style="aspect-ratio: 1.4; object-fit: cover" alt="...">
         </div>
     </div>
 </div>
@@ -639,7 +660,7 @@ University of Technology Sydney<br>
 
 const banners = {
 "home": `
-<img>
+<img src="pages/home/ambiguous-banner-1.png" class="img-fluid" alt="...">
 `,
 
 "osteotomy-psi": `
@@ -659,7 +680,7 @@ const banners = {
 `,
 
 "all-projects": `
-
+<img src="pages/all-projects/ambiguous-banner-2.png" class="img-fluid" alt="...">
 `,
 
 "skills": `
