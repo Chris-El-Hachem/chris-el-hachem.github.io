@@ -451,7 +451,7 @@ const pageContents = {
 
 <h2>Inverse Kinematics</h2>
 <p>Inverse kinematics is the opposite of forward kinematics, aimed at defining the joint state for a given pose. We can imagine forward kinematics as a function \\(f(q)\\) that takes a vector of joint angles \\(q\\) as its input and outputs the pose information \\(x\\) of the end effector relative to the base for the given joint angles. Inverse kinematics aims to find a solution \\(q=f^{-1}(x)\\), though there can be multiple solutions \\(q\\) for a given \\(x\\).</p> 
-<p>A common way of finding \\(q\\) is through the use of iterative numerical processes such as <b>gradient descent</b> or the <b>Newton-Raphson method</b>. The former takes a starting joint state q0 and approximates a valid solution with sufficient iteration of the formula \\(q_{k+1}=q_k+J(q_k)^Te_k\\), where \\(e_k=x_{desired}-f(q_k)\\) and \\(J(q_k)\\) is the Jacobian matrix given by the formula below: 
+<p>A common way of finding \\(q\\) is through the use of iterative numerical processes such as <b>gradient descent</b> or the <b>Newton-Raphson method</b>. The former takes a starting joint state \\(q_0\\) and approximates a valid solution with sufficient iteration of the formula \\(q_{k+1}=q_k+J(q_k)^Te_k\\), where \\(e_k=x_{desired}-f(q_k)\\) and \\(J(q_k)\\) is the Jacobian matrix given by the formula below: 
 \\[
 J(\\textbf{q})=\\frac{d\\textbf{x}}{d\\textbf{q}}=\\begin{bmatrix}
 \\frac{\\partial x_1}{\\partial q_1} & \\frac{\\partial x_1}{\\partial q_2} &\\cdots & \\frac{\\partial x_1}{\\partial q_n} \\\\
@@ -656,7 +656,7 @@ University of Technology Sydney<br>
     <\a>
 </p>
 `,
-}
+};
 
 const banners = {
 "home": `
@@ -694,18 +694,24 @@ const banners = {
 "contact": `
 <img src="pages/contact/network_banner.jpg" class="img-fluid" alt="...">
 `,
-}
+};
 
 const cont = document.getElementById("main-content");
-const banner_div = document.getElementById("banner")
+const banner_div = document.getElementById("banner");
+const pages_with_maths = ['hand-eye'];
+let current_page = 'start';
 
 async function goToPage(pageName) {
     if (!pageContents.hasOwnProperty(pageName)) return; 
     // The whitelist condition above ensures that this function will 
     // only change the inner HTML if the new HTML comes from the 
     // object, preventing JS injections and other bad stuff.
+
+    if (current_page === pageName) return;
+    current_page = pageName;
+    
     cont.innerHTML = pageContents[pageName];
-    MathJax.typeset();
+    if (pages_with_maths.includes(pageName)) MathJax.typeset();
     banner_div.innerHTML = banners[pageName];
 }
 
