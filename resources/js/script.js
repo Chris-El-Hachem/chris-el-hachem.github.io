@@ -597,6 +597,16 @@ L=\\begin{bmatrix}
 
 
 <h1>Experience</h1>
+<p><b>Jan 2025 - Current</b><br>
+Company: Personalised Surgery<br>
+<b>Role: Biomedical Engineering Intern</b>
+<ul>
+    <li>Supporting biomedical engineering and clinical projects through research, documentation, and assistance with design, planning, and process improvement tasks</li>
+    <li>Assisting with operational and administrative workflows, including data organisation, preparation of educational or training materials, internal documentation, and support for ongoing projects and initiatives</li>
+    <li>Engage in structured learning and shadowing opportunities to develop an understanding of orthopaedic workflows, medical device development, and cross-functional collaboration</li>
+</ul><br>
+</p>
+
 <p><b>Jan 2025 - Jun 2025</b><br>
 Company: Windtech Consultants<br>
 <b>Role: Assistant Laboratory Engineer</b>
