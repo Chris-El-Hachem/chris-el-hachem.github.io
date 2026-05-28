@@ -597,7 +597,7 @@ L=\\begin{bmatrix}
 
 
 <h1>Experience</h1>
-<p><b>Jan 2025 - Current</b><br>
+<p><b>Jan 2026 - May 2026</b><br>
 Company: Personalised Surgery<br>
 <b>Role: Biomedical Engineering Intern</b>
 <ul>
