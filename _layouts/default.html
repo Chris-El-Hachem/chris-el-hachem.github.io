@@ -8,13 +8,25 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" type="text/css" href="resources/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script
       id="MathJax-script"
       async
       src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"
     ></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [
+            ["$", "$"],
+            ["\\(", "\\)"],
+            ["$$", "$$"],
+          ], // Add '$$' here
+          displayMath: [["\\[", "\\]"]], // Remove '$$' from display
+        },
+      };
+    </script>
   </head>
 
   <body data-bs-theme="dark">
@@ -36,7 +48,7 @@
         <div class="collapse navbar-collapse" id="navbarColor01">
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
-              <a onclick="goToPage('home')" class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="{{ '/' | relative_url }}">Home</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -49,35 +61,26 @@
                 >Projects</a
               >
               <div class="dropdown-menu">
-                <a onclick="goToPage('ami-go')" class="dropdown-item" href="#"
-                  >Ami-GO Step Tracker</a
+                {% for post in site.posts limit:3 %}
+                <a class="dropdown-item" href="{{ post.url | relative_url }}"
+                  >{{post.title}}</a
                 >
-                <a
-                  onclick="goToPage('osteotomy-psi')"
-                  class="dropdown-item"
-                  href="#"
-                  >Osteotomy PSI</a
-                >
-                <a onclick="goToPage('pliers')" class="dropdown-item" href="#"
-                  >Monolithic Pliers</a
-                >
-
+                {% endfor %}
                 <div class="dropdown-divider"></div>
                 <a
-                  onclick="goToPage('all-projects')"
                   class="dropdown-item"
-                  href="#"
+                  href="{{ '/all-projects/' | relative_url }}"
                   >All Projects</a
                 >
               </div>
             </li>
             <li class="nav-item">
-              <a onclick="goToPage('skills')" class="nav-link" href="#"
+              <a class="nav-link" href="{{ '/skills-about/' | relative_url }}"
                 >Skills/About</a
               >
             </li>
             <li class="nav-item">
-              <a onclick="goToPage('contact')" class="nav-link" href="#"
+              <a class="nav-link" href="{{ '/contact/' | relative_url }}"
                 >Contact</a
               >
             </li>
@@ -92,7 +95,13 @@
       id="banner"
       class="ms-0"
       style="aspect-ratio: 4; object-fit: cover; overflow: hidden"
-    ></div>
+    >
+      <img
+        src="/assets/images/{{ page.folder }}/{{ page.banner }}"
+        class="img-fluid"
+        alt="..."
+      />
+    </div>
     <!--end of Page banner-->
 
     <style>
@@ -110,16 +119,50 @@
       .floaty-card {
         cursor: pointer;
         transition: transform 0.3s ease;
+        text-decoration: none;
       }
 
       .floaty-card:hover {
         transform: translateY(-10px);
+      } /*
+      .floaty-card {
+        display: block;
+        color: inherit;
+        text-decoration: none;
       }
+
+      .floaty-card:visited {
+        color: inherit;
+      }
+
+      .floaty-card .card {
+        height: 100%;
+        transition:
+          transform 0.25s ease,
+          box-shadow 0.25s ease;
+      }
+
+      .floaty-card:hover .card,
+      .floaty-card:focus-visible .card {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      }
+        */
+      /* Keep all card text the default colour */
+      /*
+      .floaty-card .card,
+      .floaty-card .card h1,
+      .floaty-card .card h2,
+      .floaty-card .card p,
+      .floaty-card .card li {
+        color: inherit;
+        text-decoration: none;
+      } */
     </style>
 
     <!--Main page text-->
     <div class="container-fluid">
-      <div id="main-content" class="mx-2 my-2"></div>
+      <div id="main-content" class="mx-2 my-2">{{ content}}</div>
     </div>
     <!--end of Main page text-->
 
@@ -211,6 +254,13 @@
             rel="noopener noreferrer"
           >
             MathJax</a
+          >. Static site generation with
+          <a
+            href="https://jekyllrb.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Jekyll</a
           >.
         </a>
       </section>
@@ -224,7 +274,6 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-    <script src="resources/js/script.js"></script>
     <!--end of Scripts-->
   </body>
 </html>

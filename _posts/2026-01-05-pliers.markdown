@@ -1,0 +1,71 @@
+---
+layout: post
+title: "Monolithic Pliers"
+folder: "pliers"
+banner: "pliers-banner.png"
+thumbnail: "pliers.jpg"
+permalink: /pliers/
+---
+
+<p>University Project</p>
+<h2>Summary</h2>
+<p>I designed a pair of 3D-printed pliers that are monolithic (printable in one piece with minimal post-processing). My design weighs under 20 g but can apply over 4 kg of clamping force before breaking.</p>
+<h2>Skills Used</h2>
+<ul>
+    <li>CAD (Autodesk Fusion)</li>
+    <li>Design for Additive Manufacturing</li>
+    <li>Finite Element Analysis</li>
+    <li>3D Printing</li>
+</ul>
+
+<!--more-->
+
+<div class="row">
+    <div class="col-md-8">
+        <h2>Acknowledgements</h2>
+        <p>Thank you to Guy Smith for slicing and 3D printing the model, as well as for helping me with content understanding throughout the subject. Thank you to the subject staff and friends as well for their support.</p>
+    </div>
+    <div class="col-md-4">
+        <img src="/assets/images/pliers/pliers.jpg" class="img-fluid page-img" style="aspect-ratio: 1.5;" alt="...">
+        <p style="text-align: center;">Monolithic Pliers</p>
+    </div>
+</div>
+
+<p></p>
+
+<div class="row">
+    <div class="col-md-2">
+        <h2>Finite Element Analysis</h2>
+        <p>Mechanical property simulations were used to maximise part strength whilst minimising material usage. The design experiences the most stress near the hinge so I accumulated the most material around that section. The handles and jaws received much less stress, so I reduced the mass significantly in those areas.</p>
+    </div>
+    <div class="col-md-2">
+        <img src="/assets/images/pliers/fea.png" class="img-fluid page-img" style="aspect-ratio: 0.5;" alt="...">
+        <p style="text-align: center;">Finite Element Analysis</p>
+    </div>
+    <div class="col-md-3">
+        <img src="/assets/images/pliers/jaw-close.png" class="img-fluid page-img" style="aspect-ratio: 1.5;" alt="...">
+        <p style="text-align: center;">Pliers' Jaw</p>
+        <img src="/assets/images/pliers/stress-layers.png" class="img-fluid page-img" style="aspect-ratio: 1.5;" alt="...">
+        <p style="text-align: center;">Stress Orientation</p>
+    </div>
+    <div class="col-md-5">
+        <h2>Strength Considerations</h2>
+        <p>Many curves and fillets were used in the design. This not only aids in the ergonomics of the pliers but also allows for a more even distribution of stress, which tends to accumulate at sharp edges.</p>
+        <p>The thickness of the truss beams was made to be an integer multiple of the 3d printer's wall thickness, optimising the strength and material usage in the design.</p>
+        <p>The pliers were designed to be printed in an orientation such that the strength of the parts during their function would not be hindered by anisotropy. Fused deposition modelling (FDM) parts are particularly susceptible to breaking, or delamination, when they experience forces that separate the layers. The forces applied to the handles and jaws, as well as the tension inside them, will be parallel to the layers, so there will not be tension pulling the layers apart. There will be no shear forces parallel to the layers outside of the hinge, which is the thickest part of the pliers to counteract this weakness.</p>
+    </div>
+</div>
+
+<p></p>
+
+<div class="row">
+    <div class="col-md-9">
+        <h2>Post-Processing Considerations</h2>
+        <p>No brims or rafts were necessary for the design, except for the required supports. The pliers have a large flat surface at the bottom, making extra adhesion material unnecessary. This decreases material waste, post-production time and the risk of damaging the print during post-production.</p>
+        <p>The part has been designed to make minimal use of supports, containing no overhangs outside the section where the two parts meet at the hinge. The hinge itself is sealed with a 40&deg slope, an overhang that is printable without supports. This minimises waste material, post-processing time and the risk of damaging the part during post-processing.</p>
+    </div>
+    <div class="col-md-3">
+        <img src="/assets/images/pliers/prusa.png" class="img-fluid page-img" style="aspect-ratio: 1.5;" alt="...">
+        <p style="text-align: center;">Pliers' Hinge in PrusaSlicer</p>
+    </div>
+</div>
