@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<h1>{{ page.title }}</h1>
+<p>{{ page.subtitle | markdownify}}</p>
+
+<h2>Summary</h2>
+<p>{{ page.summary }}</p>
+
+<h2>Skills Used</h2>
+<ul>
+  {% for item in page.skills %}
+  <li>{{ item }}</li>
+  {% endfor %}
+</ul>
+
+<div class="post-content">{{ content }}</div>

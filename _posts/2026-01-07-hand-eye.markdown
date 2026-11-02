@@ -1,24 +1,18 @@
 ---
 layout: post
 title: "Robot Hand-Eye Calibration"
+subtitle: "University Group Project with [John Chen](https://www.linkedin.com/in/john-a-chen/), Guy Smith and [Sethy Chhin](https://www.linkedin.com/in/sethy-chhin-04b51b190/)"
+summary: "We implemented a hand-eye calibration system to connect the movement of a robot arm (DOBOT Magician) with the vision of a camera. By using a camera feed to direct the motion of a robot arm (a process known as visual servoing), the robot can avoid obstacles and interact with objects whose positions are not precisely known."
+skills:
+  - MATLAB/ROS
+  - Programming Robotic Arms
+  - Linear Algebra
 folder: "hand-eye"
 banner: "hand-eye-banner.png"
 thumbnail: "testing.jpg"
 permalink: /hand-eye/
+coolness: 70
 ---
-
-<h1>Robot Hand-Eye Calibration</h1>
-<p>University Group Project with <a href="https://www.linkedin.com/in/john-a-chen/">John Chen</a>, Guy Smith and <a href="https://www.linkedin.com/in/sethy-chhin-04b51b190/">Sethy Chhin</a></p>
-<h2>Summary</h2>
-<p>We implemented a hand-eye calibration system to connect the movement of a robot arm (DOBOT Magician) with the vision of a camera. By using a camera feed to direct the motion of a robot arm (a process known as visual servoing), the robot can avoid obstacles and interact with objects whose positions are not precisely known.</p>
-<h2>Skills Used</h2>
-<ul>
-    <li>MATLAB/ROS</li>
-    <li>Programming Robotic Arms</li>
-    <li>Linear Algebra</li>
-</ul>
-
-<!--more-->
 
 <script>
     MathJax.typeset();
@@ -77,7 +71,7 @@ permalink: /hand-eye/
 
 <h2>Forward Kinematics</h2>
 <p>In the context of a robot arm, the objective of forward kinematics is to identify the <b>pose</b> (translation and rotation information) of the end effector relative to the base for a given joint state (defined angles of revolute joints and translations of prismatic joints). The relative pose transform of two adjacent joints is, fortunately, able to be expressed with a single degree of freedom. The pose of the end effector relative to the base can be evaluated by chaining the relative joint transforms of each joint together. The transforms can be expressed with a minimum of 4 parameters, such as the <b>Denavit-Hartenberg (DH) parameters</b>, a sequence of rotations around and translations across the z and x axes.</p>
-<h5>DH parameters of a DOBOT Magician (Gonz&aacutelez, 2023)</h5>
+<h5>DH parameters of a DOBOT Magician (Gonz&aacute;lez, 2023)</h5>
 <table class="table">
     <thead>
         <tr>
@@ -236,7 +230,7 @@ L=\\begin{bmatrix}
 <p>Corke, P. (2023). <em>Robotics Toolbox for MATLAB&reg release 10</em> [Computer software]. Retrieved from https://github.com/petercorke/robotics-toolbox-matlab</p>
 <p>Denavit, J., & Hartenberg, R. S. (1955). A kinematic notation for lower-pair mechanisms based on matrices. <em>Journal of Applied Mechanics, 22</em>(2), 215-221. https://doi.org/10.1115/1.4011045</p>
 <p>Dong, L. (2022). <em>hand-eye calibration</em> [Computer software]. Retrieved from https://github.com/LarryDong/HandEye-Tsai/tree/main</p>
-<p>Gonz&aacutelez, F. (2023). A Hybrid Physical-Virtual Educational Robotic Arm. https://doi.org/10.20944/preprints202307.1168.v1 </p>
+<p>Gonz&aacute;lez, F. (2023). A Hybrid Physical-Virtual Educational Robotic Arm. https://doi.org/10.20944/preprints202307.1168.v1 </p>
 <p>Paul, G. (2021). <em>DOBOT Magician Driver</em> [Computer software]. Retrieved from https://github.com/gapaul/dobot_magician_driver</p>
 <p>Tsai, R. Y., & Lenz, R. K. (1989). A new technique for fully autonomous and efficient 3D robotics hand/eye calibration. <em>IEEE Transactions on Robotics and Automation, 5</em>(3), 345-358. https://doi.org/10.1109/70.34770</p>
 </div>

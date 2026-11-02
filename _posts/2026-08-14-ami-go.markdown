@@ -1,29 +1,19 @@
 ---
 layout: post
 title: "Ami-GO Step Tracker"
+subtitle: "University Group Project with [Isabelle Tia](https://www.linkedin.com/in/isabelle-tia-049701227/), [Daniya Syed](https://www.linkedin.com/in/daniya-syed-robotixdan/) and Zain Khan"
+summary: "Ami-GO is a step-tracking device designed to encourage children and teenagers to go outside and be more active. This was a multi-faceted project involving circuit design, PCB design, embedded programming and the creation of a 3D-printed case. The final product was highly regarded by the tutors and led to me receiving a high distinction for the subject. My main contributions to the project were the design of an analog low-pass filter to filter noise from the analog accelerometer, and the programming of algorithms to count steps with the accelerometer signal."
+skills:
+  - PCB CAD (Altium Designer)
+  - Circuit analysis and simulation (LTspice)
+  - Embedded programming (Arduino IDE, C++, STM32CubeProg)
+  - Circuit testing (oscilloscope, multimeter)
 folder: "ami-go"
 banner: "ami-go_banner.png"
 thumbnail: "ami-go_rock.jpg"
 permalink: /ami-go/
+coolness: 100
 ---
-
-<h1>Ami-GO: Step Tracking Device</h1>
-<p>University Group Project with <a href="https://www.linkedin.com/in/isabelle-tia-049701227/">Isabelle Tia</a>, <a href="https://www.linkedin.com/in/daniya-syed-robotixdan/">Daniya Syed</a> and Zain Khan</p>
-<h2>Summary</h2>
-<p>Ami-GO is a step-tracking device designed to encourage children and teenagers to go outside and be more active. This was a multi-faceted project involving circuit design, PCB design, embedded programming and the creation of a 3D-printed case. The final product was highly regarded by the tutors and led to me receiving a high distinction for the subject. My main contributions to the project were:</p>
-<ul>
-    <li>The design of an analog low-pass filter to filter noise from the analog accelerometer</li>
-    <li>The programming of algorithms to count steps with the accelerometer signal</li>
-</ul>
-<h2>Skills Used</h2>
-<ul>
-    <li>PCB CAD (Altium Designer)</li>
-    <li>Circuit analysis and simulation (LTspice)</li>
-    <li>Embedded programming (Arduino IDE, C++, STM32CubeProg)</li>
-    <li>Circuit testing (oscilloscope, multimeter)</li>
-</ul>
-
-<!--more-->
 
 <div class="row">
     <div class="col-md-3">
@@ -328,7 +318,11 @@ permalink: /ami-go/
 <p></p>
 
 <h2>References</h2>
-<div style="padding-left: 3em; text-indent: -3em;">
+<div style="padding-left: 3em; 
+    text-indent: -3em; 
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-all;">
 <p>Geek3. (2016). <em>Filters order5</em> [Image]. Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Filters_order5.svg</p>
 <p>Karki, J. (2023). <em>Active Low-Pass Filter Design</em>. https://www.ti.com/lit/an/sloa049d/sloa049d.pdf?ts=1786501754072</p>
 <p>Omegatron. (2005a). <em>Butterworth filter bode plot</em> [Image]. Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Butterworth_filter_bode_plot.png</p>

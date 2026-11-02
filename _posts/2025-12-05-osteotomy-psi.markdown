@@ -1,25 +1,19 @@
 ---
 layout: post
 title: "Osteotomy PSI"
+subtitle: "Design Challenge for Personalised Surgery"
+summary: "I designed a surgical guide for an osteotomy (a surgery where bone is cut and realigned). This precise 3D-printed object mounts onto the surface of a bone in surgery, helping to guide the surgeons' drills and saws. I also designed a plate to secure the realigned bone so it can heal safely and steadily."
+skills:
+  - X-Ray Analysis
+  - CT Scan Segmentation (Horos)
+  - CAD (Blender)
+  - 3D Printing
 folder: "osteotomy-psi"
 banner: "osteotomy_banner.png"
 thumbnail: "osteotomy_banner.png"
 permalink: /osteotomy-psi/
+coolness: 80
 ---
-
-<h1>Osteotomy PSI</h1>
-<p>Design Challenge for Personalised Surgery</p>
-<h2>Summary</h2>
-<p>I designed a surgical guide for an osteotomy (a surgery where bone is cut and realigned). This precise 3D-printed object mounts onto the surface of a bone in surgery, helping to guide the surgeons' drills and saws. I also designed a plate to secure the realigned bone so it can heal safely and steadily.</p>
-<h2>Skills Used</h2>
-<ul>
-    <li>X-Ray Analysis</li>
-    <li>CT Scan Segmentation (Horos)</li>
-    <li>CAD (Blender)</li>
-    <li>3D Printing</li>
-</ul>
-
-<!--more-->
 
 <h2>Context</h2>
 <p>A misalignment in the structure of the bones in the legs can result in pain and mobility issues. A common example of this is osteoarthritis in the knee. When the weight the leg bears is not distributed evenly across the joint, the meniscus and cartilage on one side can wear down. The exposed bone generates pain and mobility issues in the knees.</p>

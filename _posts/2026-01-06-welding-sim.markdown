@@ -1,25 +1,19 @@
 ---
 layout: post
 title: "Welding Robot Simulation"
+subtitle: "University Group Project with [John Chen](https://www.linkedin.com/in/john-a-chen/) and Guy Smith"
+summary: "We designed a simulation of an automated robotic welding setup. Two 6-DOF (6 degrees of freedom) robotic arms can be programmed to manipulate heavy metal parts and apply welds to them. This system accounts for many safety features such as obstacle avoidance, singularity avoidance and emergency stopping."
+skills:
+  - CAD (SOLIDWORKS and Blender)
+  - MATLAB
+  - Programming 6-DOF Robotic Arms
+  - Linear Algebra
 folder: "welding-sim"
 banner: "welding-banner.png"
 thumbnail: "environment.png"
 permalink: /welding-sim/
+coolness: 40
 ---
-
-<h1>Welding Robot Simulation</h1>
-<p>University Group Project with <a href="https://www.linkedin.com/in/john-a-chen/">John Chen</a> and Guy Smith</p>
-<h2>Summary</h2>
-<p>We designed a simulation of an automated robotic welding setup. Two 6-DOF (6 degrees of freedom) robotic arms can be programmed to manipulate heavy metal parts and apply welds to them. This system accounts for many safety features such as obstacle avoidance, singularity avoidance and emergency stopping.</p>
-<h2>Skills Used</h2>
-<ul>
-    <li>CAD (SOLIDWORKS and Blender)</li>
-    <li>MATLAB</li>
-    <li>Programming 6-DOF Robotic Arms</li>
-    <li>Linear Algebra</li>
-</ul>
-
-<!--more-->
 
 <div class="row">
     <div class="col-md-7">

@@ -1,25 +1,19 @@
 ---
 layout: post
 title: "Monolithic Pliers"
+subtitle: "University Project"
+summary: "I designed a pair of 3D-printed pliers that are monolithic (printable in one piece with minimal post-processing). My design weighs under 20 g but can apply over 4 kg of clamping force before breaking."
+skills:
+  - CAD (Autodesk Fusion)
+  - Design for Additive Manufacturing
+  - Finite Element Analysis
+  - 3D Printing
 folder: "pliers"
 banner: "pliers-banner.png"
 thumbnail: "pliers.jpg"
 permalink: /pliers/
+coolness: 20
 ---
-
-<h1>Monolithic Pliers</h1>
-<p>University Project</p>
-<h2>Summary</h2>
-<p>I designed a pair of 3D-printed pliers that are monolithic (printable in one piece with minimal post-processing). My design weighs under 20 g but can apply over 4 kg of clamping force before breaking.</p>
-<h2>Skills Used</h2>
-<ul>
-    <li>CAD (Autodesk Fusion)</li>
-    <li>Design for Additive Manufacturing</li>
-    <li>Finite Element Analysis</li>
-    <li>3D Printing</li>
-</ul>
-
-<!--more-->
 
 <div class="row">
     <div class="col-md-8">

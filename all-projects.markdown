@@ -11,12 +11,12 @@ permalink: /all-projects/
 <div class="container-fluid p-0">
     <div class="row">
         {% for post in site.posts %}
-            <div class="floaty-card col-xs-6 col-sm-6 col-md-4 col-lg-3">
-                <a href="{{ post.url | relative_url }}" class="thumbnail">
-                    <img src="/assets/images/{{post.folder}}/{{post.thumbnail}}" class="img-fluid icon-img" alt="...">
-                    <p style="text-align: center;">{{post.title}}</p>
-                </a>
-            </div>
+            <a class="col-md-3 floaty-card p-2" href="{{ post.url | relative_url }}">
+                <div class="card p-2">
+                    <img src="/assets/images/{{post.folder}}/{{post.thumbnail}}" class="img-fluid icon-img" style="aspect-ratio: 1.4; object-fit: cover" alt="...">
+                    <h3 style="text-align: center;">{{ post.title }}</h3>
+                </div>
+            </a>
         {% endfor %}
     </div>
 </div>
