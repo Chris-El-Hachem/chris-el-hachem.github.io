@@ -7,6 +7,7 @@ thumbnail: "osteotomy_banner.png"
 permalink: /osteotomy-psi/
 ---
 
+<h1>Osteotomy PSI</h1>
 <p>Design Challenge for Personalised Surgery</p>
 <h2>Summary</h2>
 <p>I designed a surgical guide for an osteotomy (a surgery where bone is cut and realigned). This precise 3D-printed object mounts onto the surface of a bone in surgery, helping to guide the surgeons' drills and saws. I also designed a plate to secure the realigned bone so it can heal safely and steadily.</p>

@@ -7,6 +7,7 @@ thumbnail: "ami-go_rock.jpg"
 permalink: /ami-go/
 ---
 
+<h1>Ami-GO: Step Tracking Device</h1>
 <p>University Group Project with <a href="https://www.linkedin.com/in/isabelle-tia-049701227/">Isabelle Tia</a>, <a href="https://www.linkedin.com/in/daniya-syed-robotixdan/">Daniya Syed</a> and Zain Khan</p>
 <h2>Summary</h2>
 <p>Ami-GO is a step-tracking device designed to encourage children and teenagers to go outside and be more active. This was a multi-faceted project involving circuit design, PCB design, embedded programming and the creation of a 3D-printed case. The final product was highly regarded by the tutors and led to me receiving a high distinction for the subject. My main contributions to the project were:</p>

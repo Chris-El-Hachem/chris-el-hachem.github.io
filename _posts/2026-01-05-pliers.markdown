@@ -7,6 +7,7 @@ thumbnail: "pliers.jpg"
 permalink: /pliers/
 ---
 
+<h1>Monolithic Pliers</h1>
 <p>University Project</p>
 <h2>Summary</h2>
 <p>I designed a pair of 3D-printed pliers that are monolithic (printable in one piece with minimal post-processing). My design weighs under 20 g but can apply over 4 kg of clamping force before breaking.</p>

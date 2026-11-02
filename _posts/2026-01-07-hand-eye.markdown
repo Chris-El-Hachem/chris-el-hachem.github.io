@@ -7,6 +7,7 @@ thumbnail: "testing.jpg"
 permalink: /hand-eye/
 ---
 
+<h1>Robot Hand-Eye Calibration</h1>
 <p>University Group Project with <a href="https://www.linkedin.com/in/john-a-chen/">John Chen</a>, Guy Smith and <a href="https://www.linkedin.com/in/sethy-chhin-04b51b190/">Sethy Chhin</a></p>
 <h2>Summary</h2>
 <p>We implemented a hand-eye calibration system to connect the movement of a robot arm (DOBOT Magician) with the vision of a camera. By using a camera feed to direct the motion of a robot arm (a process known as visual servoing), the robot can avoid obstacles and interact with objects whose positions are not precisely known.</p>

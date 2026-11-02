@@ -7,6 +7,7 @@ thumbnail: "environment.png"
 permalink: /welding-sim/
 ---
 
+<h1>Welding Robot Simulation</h1>
 <p>University Group Project with <a href="https://www.linkedin.com/in/john-a-chen/">John Chen</a> and Guy Smith</p>
 <h2>Summary</h2>
 <p>We designed a simulation of an automated robotic welding setup. Two 6-DOF (6 degrees of freedom) robotic arms can be programmed to manipulate heavy metal parts and apply welds to them. This system accounts for many safety features such as obstacle avoidance, singularity avoidance and emergency stopping.</p>
