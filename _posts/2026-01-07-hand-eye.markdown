@@ -18,6 +18,11 @@ coolness: 70
     MathJax.typeset();
 </script>
 
+<iframe width="1048" height="590" class="video-container" src="https://www.youtube.com/embed/nlIlINuIPB4" title="SCVid" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p style="text-align: center;">Credit to John for the video</p>
+
+<p></p>
+
 <h2>Acknowledgements</h2>
 <p>Thank you to my team members John Chen, Sethy Chhin and Guy Smith for enabling a supporting, productive work environment, as well as contributing excellent work. Thank you to the subject staff and friends as well for their support.</p>
 

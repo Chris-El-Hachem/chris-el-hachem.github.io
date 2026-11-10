@@ -131,6 +131,22 @@
       .floaty-card:hover {
         transform: translateY(-10px);
       }
+
+      .video-container {
+        display: flex;
+        justify-content: center; /* Centers the video horizontally */
+        width: 100%;
+        max-width: 800px; /* Maximum size on large screens */
+        margin: 0 auto; /* Centers the container on the page */
+        border-radius: 15px;
+      }
+
+      .video-container iframe {
+        width: 100%;
+        aspect-ratio: 16 / 9; /* Maintains proper YouTube 16:9 HD shape */
+        height: auto;
+        border: none;
+      }
     </style>
 
     <!--Main page text-->

@@ -15,6 +15,11 @@ permalink: /welding-sim/
 coolness: 40
 ---
 
+<iframe width="1048" height="590" class="video-container" src="https://www.youtube.com/embed/RnitCm5TBhw" title="SCVid" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p style="text-align: center;">Credit to John for the video</p>
+
+<p></p>
+
 <div class="row">
     <div class="col-md-7">
         <h2>Acknowledgements</h2>
